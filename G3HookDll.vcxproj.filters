@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\SharedBase">
+      <UniqueIdentifier>{3cb6f7de-1300-4b61-af84-6388e3cc8193}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Script">
+      <UniqueIdentifier>{26a2be03-1c58-40e9-bac6-611f48b51f97}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Game">
+      <UniqueIdentifier>{ed2dc388-92bb-4a46-85e3-452c89cf754f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Engine">
+      <UniqueIdentifier>{892bdb78-98b8-4130-997e-fb1c27b864e9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Src\DLLMain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Hooks.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Util.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\HookUtils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Inc\DLL_All.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\G3Enums.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\G3HookGlobals.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\SharedBase\bCObjectBase.h">
+      <Filter>Header Files\SharedBase</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\SharedBase\bCObjectRefBase.h">
+      <Filter>Header Files\SharedBase</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\SharedBase\bCPropertyId.h">
+      <Filter>Header Files\SharedBase</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\SharedBase\bCString.h">
+      <Filter>Header Files\SharedBase</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\SharedBase\bEResult.h">
+      <Filter>Header Files\SharedBase</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\SharedBase\bTObjArray.h">
+      <Filter>Header Files\SharedBase</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\SharedBase\bTPropertyContainer.h">
+      <Filter>Header Files\SharedBase</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\SharedBase\bTValArray.h">
+      <Filter>Header Files\SharedBase</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\SharedBase\bCMemoryAdmin.h">
+      <Filter>Header Files\SharedBase</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\SharedBase\bCPropertyObjectBase.h">
+      <Filter>Header Files\SharedBase</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\Script\Entity.h">
+      <Filter>Header Files\Script</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\Script\PropertySetContainer.h">
+      <Filter>Header Files\Script</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\Script\PSInventory.h">
+      <Filter>Header Files\Script</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\Script\PSNavigation.h">
+      <Filter>Header Files\Script</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\Script\PSNPC.h">
+      <Filter>Header Files\Script</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\Script\PSParty.h">
+      <Filter>Header Files\Script</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\Script\PSPlayerMemory.h">
+      <Filter>Header Files\Script</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\Script\PSRoutine.h">
+      <Filter>Header Files\Script</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\SharedBase\bCUnicodeString.h">
+      <Filter>Header Files\SharedBase</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\Script\GUI2.h">
+      <Filter>Header Files\Script</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\Script\EffectSystem.h">
+      <Filter>Header Files\Script</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\Script\PSDamageReceiver.h">
+      <Filter>Header Files\Script</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\Game\gCDamageReceiver_PS.h">
+      <Filter>Header Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\Game\gCDynamicCollisionCircle_PS.h">
+      <Filter>Header Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\Game\gCInventory_PS.h">
+      <Filter>Header Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\Game\gCNavigation_PS.h">
+      <Filter>Header Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\Game\gCNPC_PS.h">
+      <Filter>Header Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\Game\gCParty_PS.h">
+      <Filter>Header Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\Game\gCPlayerMemory_PS.h">
+      <Filter>Header Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\Game\gCScriptAdmin.h">
+      <Filter>Header Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\Game\gCScriptProcessingUnit.h">
+      <Filter>Header Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\Game\gCScriptRoutine_PS.h">
+      <Filter>Header Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\Script\PSAnimation.h">
+      <Filter>Header Files\Script</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\Engine\eCVisualAnimation_PS.h">
+      <Filter>Header Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\Script\PSFocus.h">
+      <Filter>Header Files\Script</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\Game\gCFocus_PS.h">
+      <Filter>Header Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\SharedBase\bCVector.h">
+      <Filter>Header Files\SharedBase</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\Game\gCInventorySlot.h">
+      <Filter>Header Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\Engine\eCTemplateEntityProxy.h">
+      <Filter>Header Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\Game\gCInventoryStack.h">
+      <Filter>Header Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\Engine\eCTemplateEntity.h">
+      <Filter>Header Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\Game\gCDamage_PS.h">
+      <Filter>Header Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\Script\PSDamage.h">
+      <Filter>Header Files\Script</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\Engine\eCApplication.h">
+      <Filter>Header Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\Engine\eCEngineComponentBase.h">
+      <Filter>Header Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\Engine\eCEntity.h">
+      <Filter>Header Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\Engine\eCEntityPropertySet.h">
+      <Filter>Header Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\Engine\eCEntityProxy.h">
+      <Filter>Header Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\Engine\eCInputReceiver.h">
+      <Filter>Header Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\Engine\eCLocString.h">
+      <Filter>Header Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\Engine\eCWrapper_emfx2Services.h">
+      <Filter>Header Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\Engine\Template.h">
+      <Filter>Header Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\G3HookTemplates.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\Script\PSDialog.h">
+      <Filter>Header Files\Script</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\Game\gCDialog_PS.h">
+      <Filter>Header Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\Script\PSInteraction.h">
+      <Filter>Header Files\Script</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\Game\gCInteraction_PS.h">
+      <Filter>Header Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\Script\PSItem.h">
+      <Filter>Header Files\Script</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\Game\gCItem_PS.h">
+      <Filter>Header Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\Script\PSTreasureSet.h">
+      <Filter>Header Files\Script</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\Game\gCTreasureSet_PS.h">
+      <Filter>Header Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\Engine\eCSceneAdmin.h">
+      <Filter>Header Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\SharedBase\bTValMap.h">
+      <Filter>Header Files\SharedBase</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\SharedBase\bCCriticalSectionWin32.h">
+      <Filter>Header Files\SharedBase</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

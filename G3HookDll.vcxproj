@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{6D8ECA0F-4426-4CB1-8C35-6596C2FDC881}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>G3HookDll</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <GenerateManifest>false</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <GenerateManifest>false</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <GenerateManifest>false</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <GenerateManifest>false</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;G3HOOKDLL_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>./Inc/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <StructMemberAlignment>4Bytes</StructMemberAlignment>
+      <CallingConvention>StdCall</CallingConvention>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;_USRDLL;G3HOOKDLL_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>./Inc/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <StructMemberAlignment>4Bytes</StructMemberAlignment>
+      <CallingConvention>StdCall</CallingConvention>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;G3HOOKDLL_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>./Inc/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <StructMemberAlignment>4Bytes</StructMemberAlignment>
+      <CallingConvention>StdCall</CallingConvention>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <ExceptionHandling>false</ExceptionHandling>
+      <EnableEnhancedInstructionSet>NoExtensions</EnableEnhancedInstructionSet>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;_USRDLL;G3HOOKDLL_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>./Inc/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <StructMemberAlignment>4Bytes</StructMemberAlignment>
+      <CallingConvention>StdCall</CallingConvention>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <ExceptionHandling>false</ExceptionHandling>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Src\DLLMain.cpp" />
+    <ClCompile Include="Src\Hooks.cpp" />
+    <ClCompile Include="Src\HookUtils.cpp" />
+    <ClCompile Include="Src\Util.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Inc\DLL_All.h" />
+    <ClInclude Include="Inc\Engine\eCApplication.h" />
+    <ClInclude Include="Inc\Engine\eCEngineComponentBase.h" />
+    <ClInclude Include="Inc\Engine\eCEntity.h" />
+    <ClInclude Include="Inc\Engine\eCEntityPropertySet.h" />
+    <ClInclude Include="Inc\Engine\eCEntityProxy.h" />
+    <ClInclude Include="Inc\Engine\eCInputReceiver.h" />
+    <ClInclude Include="Inc\Engine\eCLocString.h" />
+    <ClInclude Include="Inc\Engine\eCSceneAdmin.h" />
+    <ClInclude Include="Inc\Engine\eCTemplateEntity.h" />
+    <ClInclude Include="Inc\Engine\eCTemplateEntityProxy.h" />
+    <ClInclude Include="Inc\Engine\eCVisualAnimation_PS.h" />
+    <ClInclude Include="Inc\Engine\eCWrapper_emfx2Services.h" />
+    <ClInclude Include="Inc\Engine\Template.h" />
+    <ClInclude Include="Inc\G3Enums.h" />
+    <ClInclude Include="Inc\G3HookGlobals.h" />
+    <ClInclude Include="Inc\G3HookTemplates.h" />
+    <ClInclude Include="Inc\Game\gCDamageReceiver_PS.h" />
+    <ClInclude Include="Inc\Game\gCDamage_PS.h" />
+    <ClInclude Include="Inc\Game\gCDialog_PS.h" />
+    <ClInclude Include="Inc\Game\gCDynamicCollisionCircle_PS.h" />
+    <ClInclude Include="Inc\Game\gCFocus_PS.h" />
+    <ClInclude Include="Inc\Game\gCInteraction_PS.h" />
+    <ClInclude Include="Inc\Game\gCInventorySlot.h" />
+    <ClInclude Include="Inc\Game\gCInventoryStack.h" />
+    <ClInclude Include="Inc\Game\gCInventory_PS.h" />
+    <ClInclude Include="Inc\Game\gCItem_PS.h" />
+    <ClInclude Include="Inc\Game\gCNavigation_PS.h" />
+    <ClInclude Include="Inc\Game\gCNPC_PS.h" />
+    <ClInclude Include="Inc\Game\gCParty_PS.h" />
+    <ClInclude Include="Inc\Game\gCPlayerMemory_PS.h" />
+    <ClInclude Include="Inc\Game\gCScriptAdmin.h" />
+    <ClInclude Include="Inc\Game\gCScriptProcessingUnit.h" />
+    <ClInclude Include="Inc\Game\gCScriptRoutine_PS.h" />
+    <ClInclude Include="Inc\Game\gCTreasureSet_PS.h" />
+    <ClInclude Include="Inc\Script\EffectSystem.h" />
+    <ClInclude Include="Inc\Script\Entity.h" />
+    <ClInclude Include="Inc\Script\GUI2.h" />
+    <ClInclude Include="Inc\Script\PropertySetContainer.h" />
+    <ClInclude Include="Inc\Script\PSAnimation.h" />
+    <ClInclude Include="Inc\Script\PSDamage.h" />
+    <ClInclude Include="Inc\Script\PSDamageReceiver.h" />
+    <ClInclude Include="Inc\Script\PSDialog.h" />
+    <ClInclude Include="Inc\Script\PSFocus.h" />
+    <ClInclude Include="Inc\Script\PSInteraction.h" />
+    <ClInclude Include="Inc\Script\PSInventory.h" />
+    <ClInclude Include="Inc\Script\PSItem.h" />
+    <ClInclude Include="Inc\Script\PSNavigation.h" />
+    <ClInclude Include="Inc\Script\PSNPC.h" />
+    <ClInclude Include="Inc\Script\PSParty.h" />
+    <ClInclude Include="Inc\Script\PSPlayerMemory.h" />
+    <ClInclude Include="Inc\Script\PSRoutine.h" />
+    <ClInclude Include="Inc\Script\PSTreasureSet.h" />
+    <ClInclude Include="Inc\SharedBase\bCCriticalSectionWin32.h" />
+    <ClInclude Include="Inc\SharedBase\bCMemoryAdmin.h" />
+    <ClInclude Include="Inc\SharedBase\bCObjectBase.h" />
+    <ClInclude Include="Inc\SharedBase\bCObjectRefBase.h" />
+    <ClInclude Include="Inc\SharedBase\bCPropertyId.h" />
+    <ClInclude Include="Inc\SharedBase\bCPropertyObjectBase.h" />
+    <ClInclude Include="Inc\SharedBase\bCString.h" />
+    <ClInclude Include="Inc\SharedBase\bCUnicodeString.h" />
+    <ClInclude Include="Inc\SharedBase\bCVector.h" />
+    <ClInclude Include="Inc\SharedBase\bEResult.h" />
+    <ClInclude Include="Inc\SharedBase\bTObjArray.h" />
+    <ClInclude Include="Inc\SharedBase\bTPropertyContainer.h" />
+    <ClInclude Include="Inc\SharedBase\bTValArray.h" />
+    <ClInclude Include="Inc\SharedBase\bTValMap.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

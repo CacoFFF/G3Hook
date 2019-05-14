@@ -25,6 +25,11 @@
 *.la
 *.a
 *.lib
+!Engine.lib
+!Script.lib
+!Script_Game.lib
+!SharedBase.lib
+!Game.lib
 
 # Executables
 *.exe
